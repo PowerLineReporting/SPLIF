@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoleLoadingInterchange", "PoleLoadingInterchange\PoleLoadingInterchange.csproj", "{E72023B9-9B2E-4243-B2BC-B1726BAD9AE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPLI", "TestPLI\TestPLI.csproj", "{0557EEE1-0663-4CEB-B474-5C0C190F3C73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E72023B9-9B2E-4243-B2BC-B1726BAD9AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72023B9-9B2E-4243-B2BC-B1726BAD9AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72023B9-9B2E-4243-B2BC-B1726BAD9AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72023B9-9B2E-4243-B2BC-B1726BAD9AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0557EEE1-0663-4CEB-B474-5C0C190F3C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0557EEE1-0663-4CEB-B474-5C0C190F3C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0557EEE1-0663-4CEB-B474-5C0C190F3C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0557EEE1-0663-4CEB-B474-5C0C190F3C73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53980FC9-13C9-4540-AE9F-BE2AD5D56BD3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://osmoseutils.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PoleLoadingInterchange\\PoleLoadingInterchange.csproj
+		SccProjectName1 = PoleLoadingInterchange
+		SccLocalPath1 = PoleLoadingInterchange
+		SccProjectUniqueName2 = TestPLI\\TestPLI.csproj
+		SccProjectName2 = TestPLI
+		SccLocalPath2 = TestPLI
+	EndGlobalSection
+EndGlobal
