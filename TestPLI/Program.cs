@@ -46,11 +46,16 @@ namespace TestPLI
             pole.SettingDepthMeters = 6 * foot;
             pole.Latitude = lat;
             pole.Longitude = lon;
-            pole.ElevationMeteraAboveMSL = elev;
+            pole.ElevationMetersAboveMSL = elev;
+
+            PoleAttachmentPoint pap = new PoleAttachmentPoint(model);
+            pap.AttachmentHeightMeters = 20 * foot;
+            pap.AttachmentOrientationDegrees = 0;
+            pap.AttachedTo = pole;
 
             //add crossarm to pole
             Crossarm arm = new Crossarm(model);
-            arm.AttachedTo = pole;
+            arm.AttachedTo = pap;
             arm.AttachmentOffsetMeters = 4 * foot;
             arm.ConfigKey = "8ft Std Arm";
 

@@ -154,8 +154,7 @@ namespace PoleLoadingInterchange
 
         public void Save(XmlTextWriter pWriter)
         {
-            string elemName = this.GetType().ToString();
-            elemName = elemName.Substring(elemName.LastIndexOf('.') + 1);
+            string elemName = this.GetType().Name;
             pWriter.WriteStartElement(elemName);
             pWriter.WriteAttributeString("UniqueID", this.UniqueID.ToString());
             foreach (PropertyInfo fi in this.GetType().GetProperties(
@@ -271,6 +270,7 @@ namespace PoleLoadingInterchange
     public class Pole : GroundAttachmentPoint
     {
         public Pole(Model pModel) : base(pModel) { }
+        public string StructureID { set; get; }
         public double SettingDepthMeters { set; get; }
         public double LeanAmountDegrees { set; get; }
         public double LeanDirectionDegrees { set; get; }
@@ -282,8 +282,6 @@ namespace PoleLoadingInterchange
     public class Crossarm : InterchangeSingleAttachment
     {
         public Crossarm(Model pModel) : base(pModel) { }
-        public double AttachmentHeightMeters { set; get; }
-        public double AttachmentOrientationDegrees { set; get; }
         public double AttachmentOffsetMeters { set; get; }
     }
 
@@ -344,13 +342,15 @@ namespace PoleLoadingInterchange
         public GroundAttachmentPoint(Model pModel) : base(pModel) { }
         public double Latitude { set; get; }
         public double Longitude { set; get; }
-        public double ElevationMeteraAboveMSL { set; get; }
+        public double ElevationMetersAboveMSL { set; get; }
     }
 
     public class Equipment : InterchangeSingleAttachment
     {
         public Equipment(Model pModel) : base(pModel) { }
-
+        public double AttachmentHeightMeters { set; get; }
+        public double AttachmentOrientationDegrees { set; get; }
+        public double AttachmentOffsetMeters { set; get; }
     }
 
     public class Span : InterchangeDoubleAttachment
